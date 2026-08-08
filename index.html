@@ -1,349 +1,1032 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ml">
+
 <head>
+
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
 
     <title>ZeoouneStories ❤️</title>
 
     <meta name="description"
-          content="ZeoouneStories - A beautiful place for love, stories and emotions.">
+          content="ZeoouneStories - Love, stories, emotions and beautiful memories.">
+
+    <meta name="keywords"
+          content="ZeoouneStories, Malayalam love stories, Malayalam stories, one sided love">
+
+    <meta name="author"
+          content="Vishnu Unnikrishnan">
+
+    <!-- Malayalam Font -->
+    <link rel="preconnect"
+          href="https://fonts.googleapis.com">
+
+    <link rel="preconnect"
+          href="https://fonts.gstatic.com"
+          crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+Malayalam:wght@400;500;600;700&display=swap"
+          rel="stylesheet">
+
 
     <style>
+
         * {
             box-sizing: border-box;
             margin: 0;
             padding: 0;
         }
 
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+
         body {
-            font-family: Georgia, "Times New Roman", serif;
-            background: linear-gradient(135deg, #fff0f5, #ffe4ec, #fff7fa);
+
+            font-family:
+                "Noto Serif Malayalam",
+                Georgia,
+                serif;
+
+            background:
+                linear-gradient(
+                    135deg,
+                    #fff0f5,
+                    #ffe1eb,
+                    #fff8fa
+                );
+
             color: #5a1a2b;
+
             min-height: 100vh;
+
             overflow-x: hidden;
         }
 
-        /* Floating hearts */
+
+        /* =========================
+           FLOATING HEARTS
+        ========================= */
+
         .heart {
+
             position: fixed;
-            bottom: -50px;
+
+            bottom: -60px;
+
             color: #ff4f81;
+
             font-size: 22px;
-            animation: float 7s linear infinite;
-            opacity: 0.7;
+
+            animation:
+                floatHeart 9s linear infinite;
+
+            opacity: 0.55;
+
             z-index: 0;
+
             pointer-events: none;
         }
 
-        @keyframes float {
+
+        @keyframes floatHeart {
+
             0% {
-                transform: translateY(0) rotate(0deg);
+
+                transform:
+                    translateY(0)
+                    rotate(0deg);
+
                 opacity: 0;
             }
 
             20% {
-                opacity: 0.8;
+
+                opacity: 0.65;
             }
 
             100% {
-                transform: translateY(-110vh) rotate(360deg);
+
+                transform:
+                    translateY(-110vh)
+                    rotate(360deg);
+
                 opacity: 0;
             }
         }
 
-        /* Header */
+
+        /* =========================
+           HEADER
+        ========================= */
+
         header {
+
             position: relative;
+
             z-index: 2;
+
             text-align: center;
-            padding: 70px 20px 60px;
-            background: linear-gradient(135deg, #ff4f81, #ff789b, #d93668);
+
+            padding:
+                70px 20px 65px;
+
             color: white;
-            border-bottom-left-radius: 45px;
-            border-bottom-right-radius: 45px;
-            box-shadow: 0 8px 30px rgba(190, 40, 90, 0.25);
+
+            background:
+                linear-gradient(
+                    135deg,
+                    #ff1761,
+                    #ff4f81,
+                    #d82f67
+                );
+
+            border-bottom-left-radius: 55px;
+
+            border-bottom-right-radius: 55px;
+
+            box-shadow:
+                0 10px 35px
+                rgba(190,40,90,0.25);
         }
+
+
+        .logo-heart {
+
+            font-size: 44px;
+
+            margin-bottom: 12px;
+        }
+
 
         header h1 {
+
             font-size: 48px;
-            margin-bottom: 15px;
+
             letter-spacing: 1px;
+
+            margin-bottom: 12px;
         }
 
+
         header p {
-            font-size: 19px;
+
+            font-size: 18px;
+
             opacity: 0.95;
         }
 
-        .heart-logo {
-            font-size: 35px;
-            margin-bottom: 15px;
+
+        /* =========================
+           NAVIGATION
+        ========================= */
+
+        nav {
+
+            position: relative;
+
+            z-index: 5;
+
+            width: 92%;
+
+            max-width: 850px;
+
+            margin:
+                -25px auto 35px;
+
+            padding: 15px;
+
+            background:
+                rgba(255,255,255,0.96);
+
+            border-radius: 50px;
+
+            text-align: center;
+
+            box-shadow:
+                0 8px 25px
+                rgba(120,20,60,0.15);
         }
 
-        /* Navigation */
-        nav {
-            position: relative;
-            z-index: 3;
-            background: rgba(255,255,255,0.95);
-            margin: -25px auto 35px;
-            width: 90%;
-            max-width: 700px;
-            padding: 15px;
-            border-radius: 40px;
-            box-shadow: 0 8px 25px rgba(120, 20, 60, 0.15);
-            text-align: center;
-        }
 
         nav a {
-            color: #c52f60;
+
+            display: inline-block;
+
+            color: #b92757;
+
             text-decoration: none;
-            margin: 0 15px;
-            font-weight: bold;
-        }
 
-        nav a:hover {
-            color: #ff174f;
-        }
+            font-weight: 700;
 
-        /* Main */
-        main {
-            position: relative;
-            z-index: 2;
-            max-width: 1000px;
-            margin: auto;
-            padding: 20px;
-        }
+            margin:
+                6px 20px;
 
-        .welcome {
-            text-align: center;
-            padding: 45px 25px;
-        }
-
-        .welcome h2 {
-            font-size: 36px;
-            color: #c52f60;
-            margin-bottom: 18px;
-        }
-
-        .welcome p {
-            font-size: 18px;
-            line-height: 1.8;
-            color: #713044;
-        }
-
-        /* Story cards */
-        .stories {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
-            gap: 25px;
-            margin-top: 25px;
-        }
-
-        .card {
-            background: rgba(255,255,255,0.9);
-            padding: 30px;
-            border-radius: 25px;
-            text-align: center;
-            box-shadow: 0 8px 25px rgba(120, 20, 60, 0.12);
-            border: 1px solid #ffd1df;
             transition: 0.3s;
         }
 
-        .card:hover {
-            transform: translateY(-8px);
-            box-shadow: 0 15px 30px rgba(180, 30, 80, 0.2);
+
+        nav a:hover {
+
+            color: #ff1456;
+
+            transform:
+                translateY(-2px);
         }
 
-        .card .icon {
-            font-size: 42px;
-            margin-bottom: 15px;
+
+        /* =========================
+           MAIN
+        ========================= */
+
+        main {
+
+            position: relative;
+
+            z-index: 2;
+
+            max-width: 1000px;
+
+            margin: auto;
+
+            padding:
+                10px 20px 50px;
         }
 
-        .card h3 {
+
+        section {
+
+            scroll-margin-top: 30px;
+        }
+
+
+        /* =========================
+           HOME
+        ========================= */
+
+        #home {
+
+            text-align: center;
+
+            padding:
+                65px 25px 55px;
+        }
+
+
+        #home h2 {
+
             color: #c52f60;
-            margin-bottom: 12px;
-            font-size: 22px;
+
+            font-size: 34px;
+
+            margin-bottom: 25px;
         }
 
-        .card p {
-            color: #704052;
-            line-height: 1.6;
-        }
 
-        /* Quote */
-        .quote {
-            margin: 60px 0;
-            padding: 45px 25px;
-            background: linear-gradient(135deg, #fff, #ffe8f0);
+        .main-quote {
+
+            max-width: 820px;
+
+            margin: auto;
+
+            padding:
+                38px 30px;
+
+            background:
+                rgba(255,255,255,0.90);
+
             border-radius: 30px;
-            text-align: center;
-            box-shadow: 0 8px 25px rgba(120, 20, 60, 0.12);
+
+            border:
+                1px solid #ffd1df;
+
+            box-shadow:
+                0 10px 30px
+                rgba(150,30,80,0.12);
         }
 
-        .quote p {
-            font-size: 25px;
-            font-style: italic;
-            color: #a62650;
-            line-height: 1.6;
+
+        .main-quote p {
+
+            font-size: 21px;
+
+            line-height: 2;
+
+            color: #713044;
         }
 
-        .quote span {
+
+        .signature {
+
             display: block;
-            margin-top: 15px;
-            color: #d9577c;
+
+            margin-top: 25px;
+
+            color: #c52f60;
+
+            font-weight: 700;
+
+            font-size: 18px;
         }
 
-        /* Footer */
-        footer {
-            margin-top: 50px;
-            background: #741b3a;
-            color: white;
+
+        /* =========================
+           SECTION TITLES
+        ========================= */
+
+        .section-title {
+
             text-align: center;
-            padding: 35px 20px;
+
+            color: #c52f60;
+
+            font-size: 34px;
+
+            margin-bottom: 30px;
         }
+
+
+        /* =========================
+           STORIES
+        ========================= */
+
+        #stories {
+
+            padding:
+                55px 10px;
+        }
+
+
+        .story-card {
+
+            max-width: 750px;
+
+            margin: auto;
+
+            background:
+                rgba(255,255,255,0.95);
+
+            border-radius: 30px;
+
+            overflow: hidden;
+
+            box-shadow:
+                0 12px 35px
+                rgba(150,30,80,0.14);
+
+            border:
+                1px solid #ffd1df;
+
+            text-align: center;
+        }
+
+
+        .story-card img {
+
+            width: 100%;
+
+            max-height: 550px;
+
+            object-fit: cover;
+
+            display: block;
+        }
+
+
+        .story-content {
+
+            padding:
+                35px 25px;
+        }
+
+
+        .story-content h3 {
+
+            color: #c52f60;
+
+            font-size: 30px;
+
+            margin-bottom: 18px;
+        }
+
+
+        .story-content p {
+
+            color: #713044;
+
+            font-size: 18px;
+
+            line-height: 1.9;
+        }
+
+
+        .coming {
+
+            display: inline-block;
+
+            margin-top: 22px;
+
+            padding:
+                11px 27px;
+
+            background:
+                #ffe1eb;
+
+            color: #c52f60;
+
+            border-radius: 30px;
+
+            font-weight: 700;
+
+            box-shadow:
+                0 5px 15px
+                rgba(200,40,90,0.10);
+        }
+
+
+        /* =========================
+           LOVE
+        ========================= */
+
+        #love {
+
+            padding:
+                70px 10px;
+        }
+
+
+        .love-box {
+
+            max-width: 820px;
+
+            margin: auto;
+
+            padding:
+                48px 32px;
+
+            background:
+                linear-gradient(
+                    135deg,
+                    #ffffff,
+                    #ffe8f0
+                );
+
+            border-radius: 35px;
+
+            text-align: center;
+
+            box-shadow:
+                0 10px 30px
+                rgba(150,30,80,0.13);
+
+            border:
+                1px solid #ffd1df;
+        }
+
+
+        .love-icon {
+
+            font-size: 48px;
+
+            margin-bottom: 22px;
+        }
+
+
+        .love-box p {
+
+            font-size: 21px;
+
+            line-height: 2;
+
+            color: #713044;
+        }
+
+
+        /* =========================
+           ABOUT
+        ========================= */
+
+        #about {
+
+            padding:
+                60px 10px;
+        }
+
+
+        .about-box {
+
+            max-width: 700px;
+
+            margin: auto;
+
+            padding:
+                42px 28px;
+
+            text-align: center;
+
+            background:
+                rgba(255,255,255,0.92);
+
+            border-radius: 30px;
+
+            box-shadow:
+                0 10px 30px
+                rgba(150,30,80,0.12);
+
+            border:
+                1px solid #ffd1df;
+        }
+
+
+        .about-box p {
+
+            font-size: 19px;
+
+            line-height: 2;
+
+            color: #713044;
+        }
+
+
+        .thanks {
+
+            margin-top: 28px;
+
+            color: #c52f60 !important;
+
+            font-weight: 700;
+        }
+
+
+        .names {
+
+            margin-top: 20px;
+
+            line-height: 2.2;
+
+            color: #8b284b;
+
+            font-size: 18px;
+
+            font-weight: 600;
+        }
+
+
+        /* =========================
+           FOOTER
+        ========================= */
+
+        footer {
+
+            position: relative;
+
+            z-index: 2;
+
+            margin-top: 40px;
+
+            padding:
+                42px 20px;
+
+            background:
+                #741b3a;
+
+            color: white;
+
+            text-align: center;
+        }
+
+
+        .heart-footer {
+
+            font-size: 32px;
+
+            margin-bottom: 10px;
+        }
+
 
         footer p {
-            margin: 8px;
+
+            margin: 7px;
         }
 
-        .footer-heart {
-            font-size: 30px;
-        }
 
-        /* Mobile */
+        /* =========================
+           MOBILE
+        ========================= */
+
         @media (max-width: 600px) {
 
             header {
-                padding: 55px 15px 50px;
+
+                padding:
+                    55px 15px 50px;
             }
 
+
             header h1 {
+
                 font-size: 35px;
             }
 
+
             header p {
-                font-size: 16px;
+
+                font-size: 15px;
             }
+
+
+            nav {
+
+                border-radius: 25px;
+
+                padding: 12px 8px;
+            }
+
 
             nav a {
-                display: inline-block;
-                margin: 6px 8px;
+
+                margin:
+                    5px 8px;
+
+                font-size: 14px;
             }
 
-            .welcome h2 {
+
+            #home {
+
+                padding:
+                    50px 10px;
+            }
+
+
+            #home h2,
+            .section-title {
+
                 font-size: 28px;
             }
 
-            .quote p {
-                font-size: 20px;
+
+            .main-quote {
+
+                padding:
+                    30px 20px;
             }
+
+
+            .main-quote p,
+            .love-box p {
+
+                font-size: 18px;
+
+                line-height: 1.9;
+            }
+
+
+            .story-content h3 {
+
+                font-size: 25px;
+            }
+
+
+            .story-content p {
+
+                font-size: 17px;
+            }
+
+
+            .about-box p {
+
+                font-size: 17px;
+            }
+
         }
+
     </style>
+
 </head>
+
 
 <body>
 
-    <!-- Floating hearts -->
-    <div class="heart" style="left:10%; animation-delay:0s;">❤️</div>
-    <div class="heart" style="left:25%; animation-delay:2s;">💗</div>
-    <div class="heart" style="left:45%; animation-delay:4s;">💕</div>
-    <div class="heart" style="left:65%; animation-delay:1s;">💖</div>
-    <div class="heart" style="left:82%; animation-delay:3s;">❤️</div>
 
-    <!-- Header -->
+    <!-- =========================
+         FLOATING HEARTS
+    ========================= -->
+
+    <div class="heart"
+         style="left:8%; animation-delay:0s;">
+        ❤️
+    </div>
+
+    <div class="heart"
+         style="left:25%; animation-delay:2s;">
+        💗
+    </div>
+
+    <div class="heart"
+         style="left:45%; animation-delay:4s;">
+        💕
+    </div>
+
+    <div class="heart"
+         style="left:65%; animation-delay:1s;">
+        💖
+    </div>
+
+    <div class="heart"
+         style="left:82%; animation-delay:3s;">
+        ❤️
+    </div>
+
+
+    <!-- =========================
+         HEADER
+    ========================= -->
+
     <header>
-        <div class="heart-logo">❤️</div>
 
-        <h1>ZeoouneStories</h1>
+        <div class="logo-heart">
+            ❤️
+        </div>
 
-        <p>Where every story has a little love.</p>
+        <h1>
+            ZeoouneStories
+        </h1>
+
+        <p>
+            Where every story has a little love.
+        </p>
+
     </header>
 
-    <!-- Navigation -->
+
+    <!-- =========================
+         NAVIGATION
+    ========================= -->
+
     <nav>
-        <a href="#">Home</a>
-        <a href="#">Stories</a>
-        <a href="#">Love</a>
-        <a href="#">About</a>
+
+        <a href="#home">
+            Home
+        </a>
+
+        <a href="#stories">
+            Stories
+        </a>
+
+        <a href="#love">
+            Love
+        </a>
+
+        <a href="#about">
+            About
+        </a>
+
     </nav>
 
-    <!-- Main -->
+
     <main>
 
-        <section class="welcome">
 
-            <h2>Welcome to ZeoouneStories ❤️</h2>
+        <!-- =========================
+             HOME
+        ========================= -->
 
-            <p>
-                A beautiful little corner for stories,
-                emotions, memories and moments that touch the heart.
-            </p>
+        <section id="home">
+
+            <h2>
+                Welcome to ZeoouneStories ❤️
+            </h2>
+
+
+            <div class="main-quote">
+
+                <p>
+
+                    “നിന്നെ സ്നേഹിക്കുന്നുവെന്ന് പറയാൻ
+                    എനിക്ക് ധൈര്യമില്ല,
+                    കാരണം എന്റെ സ്നേഹം നിനക്ക്
+                    ഒരു ഭാരമാകരുതെന്ന് ഞാൻ ആഗ്രഹിക്കുന്നു.
+
+                    നീ മറ്റൊരാളുടെ സ്വപ്നമായാലും,
+                    എന്റെ ഹൃദയത്തിൽ നീ എന്നും
+                    എന്റെ ഏറ്റവും മനോഹരമായ
+                    സ്വപ്നമായിരിക്കും.
+
+                    നിന്നെ സ്വന്തമാക്കാൻ കഴിഞ്ഞില്ലെങ്കിലും,
+                    നിന്നെ സ്നേഹിച്ച ആ നിമിഷങ്ങളെ
+                    ഞാൻ ഒരിക്കലും മറക്കില്ല.
+
+                    ചില പ്രണയങ്ങൾക്ക് ഒരു കൂടിച്ചേരൽ
+                    ആവശ്യമില്ല…
+                    ഒരാളുടെ ഹൃദയത്തിൽ മാത്രം ജീവിച്ചാലും
+                    അതൊരു പ്രണയമാണ്.”
+
+                </p>
+
+
+                <span class="signature">
+
+                    — Vishnu Unnikrishnan ❤️
+
+                </span>
+
+            </div>
 
         </section>
 
-        <section class="stories">
 
-            <div class="card">
-                <div class="icon">💖</div>
 
-                <h3>Love Stories</h3>
+        <!-- =========================
+             STORIES
+        ========================= -->
 
-                <p>
-                    Stories about love, relationships,
-                    memories and unforgettable moments.
-                </p>
-            </div>
+        <section id="stories">
 
-            <div class="card">
-                <div class="icon">💌</div>
+            <h2 class="section-title">
+                📖 Stories
+            </h2>
 
-                <h3>Heartfelt Stories</h3>
 
-                <p>
-                    Emotional stories that make you smile,
-                    think and sometimes shed a tear.
-                </p>
-            </div>
+            <div class="story-card">
 
-            <div class="card">
-                <div class="icon">🌹</div>
 
-                <h3>Beautiful Moments</h3>
+                <!--
+                    IMPORTANT:
+                    Upload your photo to GitHub
+                    with exact filename:
 
-                <p>
-                    Small moments can become the biggest
-                    memories of our lives.
-                </p>
+                    Sitara.png
+                -->
+
+                <img
+                    src="Sitara.png"
+                    alt="ഇനി ഒരു ജന്മമുണ്ടെങ്കിൽ - ZeoouneStories"
+                >
+
+
+                <div class="story-content">
+
+                    <h3>
+                        ഇനി ഒരു ജന്മമുണ്ടെങ്കിൽ ❤️
+                    </h3>
+
+
+                    <p>
+
+                        ചില കഥകൾ അവസാനിക്കുമ്പോഴും,
+                        ചില ഓർമ്മകൾ ഹൃദയത്തിൽ
+                        അവസാനിക്കാതെ തുടരുന്നു.
+
+                    </p>
+
+
+                    <div class="coming">
+
+                        ❤️ Coming Soon ❤️
+
+                    </div>
+
+                </div>
+
             </div>
 
         </section>
 
-        <section class="quote">
 
-            <p>
-                “Some stories are written with words,
-                but the most beautiful ones are written with the heart.”
-            </p>
 
-            <span>❤️ ZeoouneStories</span>
+        <!-- =========================
+             LOVE
+        ========================= -->
+
+        <section id="love">
+
+            <h2 class="section-title">
+                ❤️ Love
+            </h2>
+
+
+            <div class="love-box">
+
+                <div class="love-icon">
+                    💕
+                </div>
+
+
+                <p>
+
+                    “ശരിയായ ഒരാളെ കണ്ടെത്താൻ
+                    കുറച്ച് സമയം കാത്തിരിക്കേണ്ടി വന്നാലും
+                    അതിൽ തെറ്റില്ല.
+
+                    കാരണം,
+                    ജീവിതകാലം മുഴുവൻ കൂടെയുണ്ടാകേണ്ട
+                    ഒരാളെ തിരഞ്ഞെടുക്കുമ്പോൾ
+                    വേഗത്തേക്കാൾ പ്രധാനമാണ്
+                    ശരിയായ മനസ്സ്.
+
+                    ഒരുനാൾ,
+                    നമ്മളെ നമ്മളായി മനസ്സിലാക്കുന്ന
+                    ആ ഒരാൾ വരും…
+
+                    അതുവരെ,
+                    കാത്തിരിപ്പിനെയും ഒരു
+                    മനോഹരമായ പ്രണയകഥയായി
+                    കരുതാം.” ❤️
+
+                </p>
+
+            </div>
 
         </section>
+
+
+
+        <!-- =========================
+             ABOUT
+        ========================= -->
+
+        <section id="about">
+
+            <h2 class="section-title">
+                ℹ️ About
+            </h2>
+
+
+            <div class="about-box">
+
+                <p>
+
+                    ZeoouneStories എന്ന ഈ ചെറിയ
+                    സ്വപ്നത്തിന് പിന്നിൽ നിന്ന എല്ലാവർക്കും
+                    ഹൃദയം നിറഞ്ഞ നന്ദി. ❤️
+
+                </p>
+
+
+                <p class="thanks">
+
+                    Special Thanks
+
+                </p>
+
+
+                <div class="names">
+
+                    ❤️ Abijith PS
+                    <br>
+
+                    ❤️ Ayyappadas
+
+                </div>
+
+
+                <p style="margin-top:25px;">
+
+                    നിങ്ങളുടെ പിന്തുണയും സൗഹൃദവും
+                    ഈ യാത്രയ്ക്ക് എന്നും ഒരു
+                    മനോഹരമായ ഓർമ്മയായിരിക്കും.
+
+                </p>
+
+            </div>
+
+        </section>
+
 
     </main>
 
-    <!-- Footer -->
+
+
+    <!-- =========================
+         FOOTER
+    ========================= -->
+
     <footer>
 
-        <div class="footer-heart">❤️</div>
+        <div class="heart-footer">
+            ❤️
+        </div>
 
-        <p>ZeoouneStories</p>
+        <p>
+            ZeoouneStories
+        </p>
 
-        <p>Stories • Love • Emotions</p>
+        <p>
+            Stories • Love • Emotions
+        </p>
 
-        <p>© 2026 ZeoouneStories</p>
+        <p>
+            © 2026 ZeoouneStories
+        </p>
 
     </footer>
 
+
 </body>
+
 </html>
