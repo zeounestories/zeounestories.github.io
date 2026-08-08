@@ -4,21 +4,346 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>ZeoouneStories</title>
+    <title>ZeoouneStories ❤️</title>
 
-    <meta name="description" content="ZeoouneStories - Stories, information and interesting content.">
+    <meta name="description"
+          content="ZeoouneStories - A beautiful place for love, stories and emotions.">
 
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: Georgia, "Times New Roman", serif;
+            background: linear-gradient(135deg, #fff0f5, #ffe4ec, #fff7fa);
+            color: #5a1a2b;
+            min-height: 100vh;
+            overflow-x: hidden;
+        }
+
+        /* Floating hearts */
+        .heart {
+            position: fixed;
+            bottom: -50px;
+            color: #ff4f81;
+            font-size: 22px;
+            animation: float 7s linear infinite;
+            opacity: 0.7;
+            z-index: 0;
+            pointer-events: none;
+        }
+
+        @keyframes float {
+            0% {
+                transform: translateY(0) rotate(0deg);
+                opacity: 0;
+            }
+
+            20% {
+                opacity: 0.8;
+            }
+
+            100% {
+                transform: translateY(-110vh) rotate(360deg);
+                opacity: 0;
+            }
+        }
+
+        /* Header */
+        header {
+            position: relative;
+            z-index: 2;
+            text-align: center;
+            padding: 70px 20px 60px;
+            background: linear-gradient(135deg, #ff4f81, #ff789b, #d93668);
+            color: white;
+            border-bottom-left-radius: 45px;
+            border-bottom-right-radius: 45px;
+            box-shadow: 0 8px 30px rgba(190, 40, 90, 0.25);
+        }
+
+        header h1 {
+            font-size: 48px;
+            margin-bottom: 15px;
+            letter-spacing: 1px;
+        }
+
+        header p {
+            font-size: 19px;
+            opacity: 0.95;
+        }
+
+        .heart-logo {
+            font-size: 35px;
+            margin-bottom: 15px;
+        }
+
+        /* Navigation */
+        nav {
+            position: relative;
+            z-index: 3;
+            background: rgba(255,255,255,0.95);
+            margin: -25px auto 35px;
+            width: 90%;
+            max-width: 700px;
+            padding: 15px;
+            border-radius: 40px;
+            box-shadow: 0 8px 25px rgba(120, 20, 60, 0.15);
+            text-align: center;
+        }
+
+        nav a {
+            color: #c52f60;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            color: #ff174f;
+        }
+
+        /* Main */
+        main {
+            position: relative;
+            z-index: 2;
+            max-width: 1000px;
+            margin: auto;
+            padding: 20px;
+        }
+
+        .welcome {
+            text-align: center;
+            padding: 45px 25px;
+        }
+
+        .welcome h2 {
+            font-size: 36px;
+            color: #c52f60;
+            margin-bottom: 18px;
+        }
+
+        .welcome p {
+            font-size: 18px;
+            line-height: 1.8;
+            color: #713044;
+        }
+
+        /* Story cards */
+        .stories {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+            gap: 25px;
+            margin-top: 25px;
+        }
+
+        .card {
+            background: rgba(255,255,255,0.9);
+            padding: 30px;
+            border-radius: 25px;
+            text-align: center;
+            box-shadow: 0 8px 25px rgba(120, 20, 60, 0.12);
+            border: 1px solid #ffd1df;
+            transition: 0.3s;
+        }
+
+        .card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 15px 30px rgba(180, 30, 80, 0.2);
+        }
+
+        .card .icon {
+            font-size: 42px;
+            margin-bottom: 15px;
+        }
+
+        .card h3 {
+            color: #c52f60;
+            margin-bottom: 12px;
+            font-size: 22px;
+        }
+
+        .card p {
+            color: #704052;
+            line-height: 1.6;
+        }
+
+        /* Quote */
+        .quote {
+            margin: 60px 0;
+            padding: 45px 25px;
+            background: linear-gradient(135deg, #fff, #ffe8f0);
+            border-radius: 30px;
+            text-align: center;
+            box-shadow: 0 8px 25px rgba(120, 20, 60, 0.12);
+        }
+
+        .quote p {
+            font-size: 25px;
+            font-style: italic;
+            color: #a62650;
+            line-height: 1.6;
+        }
+
+        .quote span {
+            display: block;
+            margin-top: 15px;
+            color: #d9577c;
+        }
+
+        /* Footer */
+        footer {
+            margin-top: 50px;
+            background: #741b3a;
+            color: white;
+            text-align: center;
+            padding: 35px 20px;
+        }
+
+        footer p {
+            margin: 8px;
+        }
+
+        .footer-heart {
+            font-size: 30px;
+        }
+
+        /* Mobile */
+        @media (max-width: 600px) {
+
+            header {
+                padding: 55px 15px 50px;
+            }
+
+            header h1 {
+                font-size: 35px;
+            }
+
+            header p {
+                font-size: 16px;
+            }
+
+            nav a {
+                display: inline-block;
+                margin: 6px 8px;
+            }
+
+            .welcome h2 {
+                font-size: 28px;
+            }
+
+            .quote p {
+                font-size: 20px;
+            }
+        }
+    </style>
 </head>
 
 <body>
 
-    <h1>Welcome to ZeoouneStories</h1>
+    <!-- Floating hearts -->
+    <div class="heart" style="left:10%; animation-delay:0s;">❤️</div>
+    <div class="heart" style="left:25%; animation-delay:2s;">💗</div>
+    <div class="heart" style="left:45%; animation-delay:4s;">💕</div>
+    <div class="heart" style="left:65%; animation-delay:1s;">💖</div>
+    <div class="heart" style="left:82%; animation-delay:3s;">❤️</div>
 
-    <p>Stories, information and interesting content.</p>
+    <!-- Header -->
+    <header>
+        <div class="heart-logo">❤️</div>
 
-    <h2>Latest Stories</h2>
+        <h1>ZeoouneStories</h1>
 
-    <p>Coming soon...</p>
+        <p>Where every story has a little love.</p>
+    </header>
+
+    <!-- Navigation -->
+    <nav>
+        <a href="#">Home</a>
+        <a href="#">Stories</a>
+        <a href="#">Love</a>
+        <a href="#">About</a>
+    </nav>
+
+    <!-- Main -->
+    <main>
+
+        <section class="welcome">
+
+            <h2>Welcome to ZeoouneStories ❤️</h2>
+
+            <p>
+                A beautiful little corner for stories,
+                emotions, memories and moments that touch the heart.
+            </p>
+
+        </section>
+
+        <section class="stories">
+
+            <div class="card">
+                <div class="icon">💖</div>
+
+                <h3>Love Stories</h3>
+
+                <p>
+                    Stories about love, relationships,
+                    memories and unforgettable moments.
+                </p>
+            </div>
+
+            <div class="card">
+                <div class="icon">💌</div>
+
+                <h3>Heartfelt Stories</h3>
+
+                <p>
+                    Emotional stories that make you smile,
+                    think and sometimes shed a tear.
+                </p>
+            </div>
+
+            <div class="card">
+                <div class="icon">🌹</div>
+
+                <h3>Beautiful Moments</h3>
+
+                <p>
+                    Small moments can become the biggest
+                    memories of our lives.
+                </p>
+            </div>
+
+        </section>
+
+        <section class="quote">
+
+            <p>
+                “Some stories are written with words,
+                but the most beautiful ones are written with the heart.”
+            </p>
+
+            <span>❤️ ZeoouneStories</span>
+
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer>
+
+        <div class="footer-heart">❤️</div>
+
+        <p>ZeoouneStories</p>
+
+        <p>Stories • Love • Emotions</p>
+
+        <p>© 2026 ZeoouneStories</p>
+
+    </footer>
 
 </body>
 </html>
