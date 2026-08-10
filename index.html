@@ -1,89 +1,2246 @@
-<!-- Friendship Memory Section -->
-<section class="friendship-memory">
-    <div class="friendship-card">
+<!DOCTYPE html>
+<html lang="ml">
+<head>
+<meta charset="UTF-8">
 
-        <div class="friendship-icon">🫂</div>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-        <p class="friendship-quote">
-            “ദൂരം നമ്മളെ അകറ്റിയെങ്കിലും,<br>
-            ഓർമ്മകൾ ഇന്നും നമ്മളെ ഒരുമിച്ച് നിർത്തുന്നു…<br>
-            <span>Miss you, my best friends. ❤️</span>”
+<title>ZeoouneStories ❤️ | Malayalam Love, Friendship & Life Quotes</title>
+
+<meta name="description"
+content="ZeoouneStories - Malayalam love quotes, friendship quotes, sad quotes, one sided love and life quotes.">
+
+<meta name="keywords"
+content="Malayalam quotes, Malayalam love quotes, friendship quotes Malayalam, sad quotes Malayalam, one sided love Malayalam, life quotes Malayalam">
+
+<meta name="author" content="ZeoouneStories">
+
+<meta name="robots" content="index, follow">
+
+<meta property="og:title"
+content="ZeoouneStories ❤️">
+
+<meta property="og:description"
+content="Love, Friendship, Sadness & Life — words that stay in the heart.">
+
+<meta property="og:type" content="website">
+
+
+<style>
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+    font-family:
+    "Noto Sans Malayalam",
+    "Nirmala UI",
+    Arial,
+    sans-serif;
+
+    background:
+    radial-gradient(circle at 20% 10%, #ff3d8120, transparent 30%),
+    radial-gradient(circle at 80% 20%, #8b5cf625, transparent 30%),
+    linear-gradient(135deg,#09070d,#130b18,#08080d);
+
+    color:white;
+    min-height:100vh;
+    overflow-x:hidden;
+}
+
+/* ================= BACKGROUND ================= */
+
+body::before{
+    content:"";
+    position:fixed;
+    inset:0;
+    background:
+    radial-gradient(
+        circle at 50% 50%,
+        transparent 0%,
+        rgba(255,255,255,.015) 100%
+    );
+    pointer-events:none;
+    z-index:-1;
+}
+
+.bg-heart{
+    position:fixed;
+    font-size:25px;
+    opacity:.08;
+    animation:floatHeart 12s linear infinite;
+    pointer-events:none;
+    z-index:-1;
+}
+
+.h1{left:8%;top:80%;animation-delay:0s;}
+.h2{left:20%;top:60%;animation-delay:3s;}
+.h3{left:70%;top:75%;animation-delay:6s;}
+.h4{left:85%;top:45%;animation-delay:2s;}
+.h5{left:50%;top:90%;animation-delay:8s;}
+
+@keyframes floatHeart{
+
+    0%{
+        transform:translateY(0) rotate(0);
+    }
+
+    100%{
+        transform:translateY(-110vh) rotate(360deg);
+    }
+
+}
+
+
+/* ================= NAVBAR ================= */
+
+nav{
+
+    position:sticky;
+    top:15px;
+
+    width:92%;
+    max-width:1200px;
+
+    margin:15px auto;
+
+    padding:14px 20px;
+
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+
+    background:rgba(255,255,255,.07);
+
+    border:1px solid rgba(255,255,255,.12);
+
+    backdrop-filter:blur(20px);
+
+    border-radius:25px;
+
+    box-shadow:
+    0 15px 50px rgba(0,0,0,.4);
+
+    z-index:1000;
+}
+
+.logo{
+
+    font-size:22px;
+    font-weight:800;
+
+    color:white;
+
+    letter-spacing:.5px;
+}
+
+.logo span{
+    color:#ff4d91;
+}
+
+.nav-links{
+
+    display:flex;
+    gap:8px;
+}
+
+.nav-links a{
+
+    color:#ddd;
+
+    text-decoration:none;
+
+    padding:9px 14px;
+
+    border-radius:15px;
+
+    font-size:14px;
+
+    transition:.3s;
+}
+
+.nav-links a:hover{
+
+    background:#ff3d8130;
+    color:white;
+
+}
+
+
+/* ================= HERO ================= */
+
+.hero{
+
+    width:92%;
+    max-width:1200px;
+
+    margin:45px auto 30px;
+
+    min-height:600px;
+
+    display:grid;
+
+    grid-template-columns:1.1fr .9fr;
+
+    align-items:center;
+
+    gap:40px;
+
+}
+
+.hero-text{
+    animation:fadeUp 1s ease;
+}
+
+.badge{
+
+    display:inline-block;
+
+    padding:8px 14px;
+
+    border-radius:30px;
+
+    background:#ff3d8118;
+
+    border:1px solid #ff3d8140;
+
+    color:#ff8db8;
+
+    font-size:13px;
+
+    margin-bottom:20px;
+}
+
+.hero h1{
+
+    font-size:clamp(45px,7vw,85px);
+
+    line-height:1;
+
+    margin-bottom:25px;
+
+    background:
+    linear-gradient(
+        120deg,
+        #fff,
+        #ff77a9,
+        #c084fc
+    );
+
+    -webkit-background-clip:text;
+    color:transparent;
+
+}
+
+.hero p{
+
+    color:#bbb;
+
+    font-size:18px;
+
+    line-height:1.9;
+
+    max-width:650px;
+
+    margin-bottom:30px;
+
+}
+
+.hero-buttons{
+
+    display:flex;
+    gap:12px;
+    flex-wrap:wrap;
+}
+
+.btn{
+
+    border:none;
+
+    padding:14px 22px;
+
+    border-radius:18px;
+
+    text-decoration:none;
+
+    color:white;
+
+    cursor:pointer;
+
+    font-size:15px;
+
+    transition:.3s;
+
+}
+
+.btn-primary{
+
+    background:
+    linear-gradient(
+        135deg,
+        #ff357f,
+        #9f4cff
+    );
+
+    box-shadow:
+    0 10px 35px #ff357f35;
+
+}
+
+.btn-secondary{
+
+    background:#ffffff0b;
+
+    border:1px solid #ffffff18;
+
+}
+
+.btn:hover{
+
+    transform:translateY(-4px);
+
+}
+
+
+/* ================= HERO IMAGE ================= */
+
+.hero-image{
+
+    position:relative;
+
+    min-height:480px;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+}
+
+.hero-card{
+
+    width:min(420px,90%);
+
+    height:500px;
+
+    border-radius:40px;
+
+    overflow:hidden;
+
+    position:relative;
+
+    background:#17121c;
+
+    border:1px solid #ffffff1c;
+
+    box-shadow:
+    0 40px 100px rgba(0,0,0,.6);
+
+    transform:rotate(3deg);
+
+    transition:.5s;
+
+}
+
+.hero-card:hover{
+
+    transform:
+    rotate(0deg)
+    scale(1.03);
+
+}
+
+.hero-card img{
+
+    width:100%;
+    height:100%;
+    object-fit:cover;
+
+    filter:saturate(1.1);
+
+}
+
+.hero-overlay{
+
+    position:absolute;
+
+    inset:0;
+
+    background:
+    linear-gradient(
+        transparent 40%,
+        rgba(0,0,0,.9)
+    );
+
+}
+
+.hero-caption{
+
+    position:absolute;
+
+    bottom:25px;
+    left:25px;
+    right:25px;
+
+}
+
+.hero-caption h3{
+
+    font-size:24px;
+    margin-bottom:7px;
+
+}
+
+.hero-caption p{
+
+    color:#ddd;
+    font-size:14px;
+
+}
+
+
+/* ================= SECTION ================= */
+
+section{
+
+    width:92%;
+    max-width:1200px;
+
+    margin:100px auto;
+
+}
+
+.section-title{
+
+    text-align:center;
+
+    margin-bottom:45px;
+
+}
+
+.section-title .small{
+
+    color:#ff6b9f;
+
+    font-size:13px;
+
+    text-transform:uppercase;
+
+    letter-spacing:3px;
+
+}
+
+.section-title h2{
+
+    font-size:clamp(32px,5vw,55px);
+
+    margin-top:10px;
+
+}
+
+.section-title p{
+
+    color:#999;
+
+    margin-top:10px;
+
+}
+
+
+/* ================= SEARCH ================= */
+
+.search-box{
+
+    max-width:650px;
+
+    margin:0 auto 35px;
+
+    position:relative;
+
+}
+
+.search-box input{
+
+    width:100%;
+
+    padding:17px 22px;
+
+    border-radius:20px;
+
+    border:1px solid #ffffff15;
+
+    outline:none;
+
+    background:#ffffff08;
+
+    color:white;
+
+    font-size:15px;
+
+    backdrop-filter:blur(15px);
+
+}
+
+.search-box input::placeholder{
+
+    color:#777;
+
+}
+
+
+/* ================= CATEGORY CARDS ================= */
+
+.categories{
+
+    display:grid;
+
+    grid-template-columns:
+    repeat(4,1fr);
+
+    gap:18px;
+
+}
+
+.category{
+
+    position:relative;
+
+    min-height:320px;
+
+    border-radius:30px;
+
+    overflow:hidden;
+
+    cursor:pointer;
+
+    border:1px solid #ffffff15;
+
+    transition:.5s;
+
+    background:#141019;
+
+}
+
+.category:hover{
+
+    transform:translateY(-10px);
+
+    box-shadow:
+    0 30px 60px rgba(0,0,0,.5);
+
+}
+
+.category img{
+
+    width:100%;
+    height:100%;
+
+    position:absolute;
+
+    object-fit:cover;
+
+    transition:.6s;
+
+}
+
+.category:hover img{
+
+    transform:scale(1.08);
+
+}
+
+.category::after{
+
+    content:"";
+
+    position:absolute;
+
+    inset:0;
+
+    background:
+    linear-gradient(
+        transparent 25%,
+        rgba(0,0,0,.95)
+    );
+
+}
+
+.category-content{
+
+    position:absolute;
+
+    z-index:2;
+
+    bottom:25px;
+
+    left:22px;
+    right:22px;
+
+}
+
+.category-content .emoji{
+
+    font-size:30px;
+
+}
+
+.category-content h3{
+
+    font-size:25px;
+
+    margin:8px 0;
+
+}
+
+.category-content p{
+
+    color:#ccc;
+
+    font-size:13px;
+
+    line-height:1.6;
+
+}
+
+
+/* ================= QUOTES ================= */
+
+.quotes{
+
+    display:grid;
+
+    grid-template-columns:
+    repeat(3,1fr);
+
+    gap:20px;
+
+}
+
+.quote-card{
+
+    padding:30px;
+
+    border-radius:28px;
+
+    background:
+    linear-gradient(
+        145deg,
+        rgba(255,255,255,.08),
+        rgba(255,255,255,.025)
+    );
+
+    border:1px solid #ffffff12;
+
+    backdrop-filter:blur(15px);
+
+    transition:.4s;
+
+    position:relative;
+
+}
+
+.quote-card:hover{
+
+    transform:translateY(-8px);
+
+    border-color:#ff4d9140;
+
+}
+
+.quote-icon{
+
+    font-size:35px;
+
+    margin-bottom:15px;
+
+}
+
+.quote-text{
+
+    font-size:18px;
+
+    line-height:1.9;
+
+    color:#eee;
+
+}
+
+.quote-bottom{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    margin-top:25px;
+
+    gap:8px;
+
+}
+
+.quote-type{
+
+    color:#ff78a9;
+
+    font-size:12px;
+
+}
+
+.quote-actions{
+
+    display:flex;
+    gap:6px;
+
+}
+
+.small-btn{
+
+    border:none;
+
+    background:#ffffff0b;
+
+    color:#ccc;
+
+    border:1px solid #ffffff12;
+
+    padding:7px 9px;
+
+    border-radius:10px;
+
+    cursor:pointer;
+
+}
+
+.small-btn:hover{
+
+    background:#ff3d8125;
+
+}
+
+
+/* ================= FEATURE ================= */
+
+.feature{
+
+    display:grid;
+
+    grid-template-columns:1fr 1fr;
+
+    gap:30px;
+
+    align-items:stretch;
+
+}
+
+.feature-box{
+
+    padding:45px;
+
+    border-radius:35px;
+
+    background:
+    linear-gradient(
+        135deg,
+        #ff357f12,
+        #8b5cf612
+    );
+
+    border:1px solid #ffffff12;
+
+}
+
+.feature-box h3{
+
+    font-size:32px;
+    margin-bottom:15px;
+
+}
+
+.feature-box p{
+
+    color:#aaa;
+
+    line-height:1.9;
+
+}
+
+
+/* ================= QUOTE OF DAY ================= */
+
+.quote-day{
+
+    text-align:center;
+
+    padding:70px 30px;
+
+    border-radius:40px;
+
+    background:
+    radial-gradient(
+        circle at center,
+        #ff3d8120,
+        transparent 60%
+    );
+
+    border:1px solid #ff3d8120;
+
+}
+
+.quote-day .heart{
+
+    font-size:45px;
+
+}
+
+.quote-day h2{
+
+    font-size:clamp(25px,4vw,45px);
+
+    line-height:1.7;
+
+    margin:20px auto;
+
+    max-width:850px;
+
+}
+
+
+/* ================= FRIENDSHIP MEMORY ================= */
+
+.friendship-memory{
+
+    width:92%;
+    max-width:1000px;
+
+    margin:110px auto;
+
+    padding:0 0;
+
+    text-align:center;
+
+}
+
+.friendship-card{
+
+    position:relative;
+
+    overflow:hidden;
+
+    padding:65px 30px;
+
+    border-radius:40px;
+
+    background:
+
+    radial-gradient(
+        circle at top left,
+        rgba(255,77,145,.18),
+        transparent 35%
+    ),
+
+    radial-gradient(
+        circle at bottom right,
+        rgba(139,92,246,.15),
+        transparent 35%
+    ),
+
+    linear-gradient(
+        145deg,
+        rgba(255,255,255,.09),
+        rgba(255,255,255,.025)
+    );
+
+    border:1px solid rgba(255,255,255,.12);
+
+    box-shadow:
+    0 30px 90px rgba(0,0,0,.5),
+    inset 0 1px rgba(255,255,255,.08);
+
+    backdrop-filter:blur(20px);
+
+}
+
+.friendship-card::before{
+
+    content:"";
+
+    position:absolute;
+
+    width:220px;
+    height:220px;
+
+    top:-100px;
+    left:-80px;
+
+    border-radius:50%;
+
+    background:#ff3d8130;
+
+    filter:blur(70px);
+
+}
+
+.friendship-card::after{
+
+    content:"";
+
+    position:absolute;
+
+    width:220px;
+    height:220px;
+
+    bottom:-120px;
+    right:-80px;
+
+    border-radius:50%;
+
+    background:#8b5cf630;
+
+    filter:blur(70px);
+
+}
+
+.friendship-icon{
+
+    position:relative;
+    z-index:2;
+
+    font-size:48px;
+
+    margin-bottom:20px;
+
+    filter:
+    drop-shadow(
+        0 8px 20px rgba(255,60,130,.25)
+    );
+
+}
+
+.friendship-quote{
+
+    position:relative;
+    z-index:2;
+
+    font-size:clamp(19px,3vw,27px);
+
+    line-height:2;
+
+    color:#eee;
+
+    font-weight:500;
+
+}
+
+.friendship-quote span{
+
+    display:inline-block;
+
+    margin-top:5px;
+
+    color:#ff72a6;
+
+    font-weight:700;
+
+}
+
+.friends-names{
+
+    position:relative;
+    z-index:2;
+
+    margin-top:38px;
+
+    display:flex;
+
+    justify-content:center;
+
+    gap:14px;
+
+    flex-wrap:wrap;
+
+}
+
+.friends-names span{
+
+    padding:12px 24px;
+
+    border-radius:50px;
+
+    background:
+    linear-gradient(
+        135deg,
+        #d82f6b,
+        #f06b98
+    );
+
+    color:white;
+
+    font-family:
+    Georgia,
+    "Times New Roman",
+    serif;
+
+    font-size:17px;
+
+    font-weight:bold;
+
+    letter-spacing:.7px;
+
+    box-shadow:
+    0 8px 25px rgba(216,47,107,.25);
+
+    transition:.35s;
+
+}
+
+.friends-names span:hover{
+
+    transform:
+    translateY(-5px)
+    scale(1.04);
+
+    box-shadow:
+    0 12px 35px rgba(216,47,107,.4);
+
+}
+
+
+/* ================= FOOTER ================= */
+
+footer{
+
+    margin-top:100px;
+
+    padding:60px 20px 30px;
+
+    text-align:center;
+
+    border-top:1px solid #ffffff10;
+
+    background:#060509;
+
+}
+
+.footer-logo{
+
+    font-size:28px;
+
+    font-weight:800;
+
+}
+
+.footer-logo span{
+
+    color:#ff4d91;
+
+}
+
+footer p{
+
+    color:#777;
+
+    margin-top:12px;
+
+    line-height:1.8;
+
+}
+
+.footer-links{
+
+    margin:25px 0;
+
+    display:flex;
+
+    justify-content:center;
+
+    gap:20px;
+
+    flex-wrap:wrap;
+
+}
+
+.footer-links a{
+
+    color:#aaa;
+
+    text-decoration:none;
+
+}
+
+.footer-links a:hover{
+
+    color:#ff6b9f;
+
+}
+
+.copyright{
+
+    font-size:12px;
+
+    color:#555;
+
+}
+
+
+/* ================= TOAST ================= */
+
+.toast{
+
+    position:fixed;
+
+    bottom:25px;
+
+    left:50%;
+
+    transform:
+    translate(-50%,100px);
+
+    background:#17131d;
+
+    border:1px solid #ffffff18;
+
+    padding:13px 20px;
+
+    border-radius:15px;
+
+    color:white;
+
+    z-index:9999;
+
+    transition:.4s;
+
+}
+
+.toast.show{
+
+    transform:
+    translate(-50%,0);
+
+}
+
+
+/* ================= ANIMATION ================= */
+
+@keyframes fadeUp{
+
+    from{
+
+        opacity:0;
+
+        transform:
+        translateY(30px);
+
+    }
+
+    to{
+
+        opacity:1;
+
+        transform:
+        translateY(0);
+
+    }
+
+}
+
+
+/* ================= MOBILE ================= */
+
+@media(max-width:900px){
+
+    .hero{
+
+        grid-template-columns:1fr;
+
+        text-align:center;
+
+    }
+
+    .hero p{
+
+        margin-left:auto;
+        margin-right:auto;
+
+    }
+
+    .hero-buttons{
+
+        justify-content:center;
+
+    }
+
+    .categories{
+
+        grid-template-columns:
+        repeat(2,1fr);
+
+    }
+
+    .quotes{
+
+        grid-template-columns:
+        1fr 1fr;
+
+    }
+
+    .feature{
+
+        grid-template-columns:1fr;
+
+    }
+
+}
+
+@media(max-width:600px){
+
+    nav{
+
+        width:94%;
+
+    }
+
+    .nav-links a{
+
+        padding:7px;
+
+        font-size:12px;
+
+    }
+
+    .logo{
+
+        font-size:17px;
+
+    }
+
+    .hero{
+
+        margin-top:35px;
+
+    }
+
+    .hero-card{
+
+        height:400px;
+
+    }
+
+    .categories{
+
+        grid-template-columns:1fr;
+
+    }
+
+    .quotes{
+
+        grid-template-columns:1fr;
+
+    }
+
+    section{
+
+        margin:70px auto;
+
+    }
+
+    .friendship-card{
+
+        padding:45px 18px;
+
+    }
+
+    .friends-names span{
+
+        font-size:15px;
+
+        padding:10px 18px;
+
+    }
+
+}
+
+</style>
+</head>
+
+
+<body>
+
+
+<!-- FLOATING HEARTS -->
+
+<div class="bg-heart h1">❤️</div>
+<div class="bg-heart h2">♡</div>
+<div class="bg-heart h3">💗</div>
+<div class="bg-heart h4">♡</div>
+<div class="bg-heart h5">❤️</div>
+
+
+<!-- ================= NAVIGATION ================= -->
+
+<nav>
+
+    <div class="logo">
+        Zeooune<span>Stories</span> ❤️
+    </div>
+
+    <div class="nav-links">
+
+        <a href="#home">Home</a>
+
+        <a href="#categories">
+            Explore
+        </a>
+
+        <a href="#quotes">
+            Quotes
+        </a>
+
+    </div>
+
+</nav>
+
+
+<!-- ================= HERO ================= -->
+
+<main id="home">
+
+<section class="hero">
+
+    <div class="hero-text">
+
+        <div class="badge">
+            ✨ Words • Feelings • Memories
+        </div>
+
+        <h1>
+            Feel the<br>
+            Words.
+        </h1>
+
+        <p>
+            ചില വാക്കുകൾ വായിക്കാനുള്ളതല്ല...
+            ഹൃദയത്തിൽ സൂക്ഷിക്കാനുള്ളതാണ്.
+            ❤️
         </p>
 
-        <div class="friends-names">
-            <span>Ayyappadas</span>
-            <span>Abijithh</span>
-            <span>Ponnu</span>
+        <div class="hero-buttons">
+
+            <a
+            href="#categories"
+            class="btn btn-primary">
+                Explore Stories →
+            </a>
+
+            <a
+            href="#quotes"
+            class="btn btn-secondary">
+                Read Quotes
+            </a>
+
         </div>
 
     </div>
+
+
+    <div class="hero-image">
+
+        <div class="hero-card">
+
+            <img
+            src="love.jpg"
+            alt="Malayalam love and emotions">
+
+            <div class="hero-overlay"></div>
+
+            <div class="hero-caption">
+
+                <h3>
+                    Some feelings
+                    need no words.
+                </h3>
+
+                <p>
+                    Welcome to ZeoouneStories.
+                </p>
+
+            </div>
+
+        </div>
+
+    </div>
+
 </section>
 
-<style>
-.friendship-memory {
-    padding: 70px 20px;
-    text-align: center;
-}
 
-.friendship-card {
-    max-width: 850px;
-    margin: auto;
-    padding: 55px 30px;
-    border-radius: 30px;
-    background: linear-gradient(135deg, #fff0f6, #ffffff, #ffe4ef);
-    box-shadow: 0 15px 45px rgba(190, 50, 100, 0.15);
-    border: 1px solid rgba(200, 70, 120, 0.15);
-}
+<!-- ================= CATEGORIES ================= -->
 
-.friendship-icon {
-    font-size: 42px;
-    margin-bottom: 20px;
-}
+<section id="categories">
 
-.friendship-quote {
-    font-size: 21px;
-    line-height: 2;
-    color: #6b3048;
-    font-weight: 500;
-}
+    <div class="section-title">
 
-.friendship-quote span {
-    color: #d12f69;
-    font-weight: 700;
-}
+        <div class="small">
+            Explore
+        </div>
 
-.friends-names {
-    margin-top: 30px;
-    display: flex;
-    justify-content: center;
-    gap: 14px;
-    flex-wrap: wrap;
-}
+        <h2>
+            Choose your feeling.
+        </h2>
 
-.friends-names span {
-    padding: 10px 22px;
-    border-radius: 50px;
-    background: linear-gradient(135deg, #d82f6b, #f06b98);
-    color: white;
-    font-family: Georgia, serif;
-    font-size: 17px;
-    font-weight: bold;
-    letter-spacing: 0.5px;
-    box-shadow: 0 6px 18px rgba(216, 47, 107, 0.25);
-}
+        <p>
+            ഓരോ ചിത്രത്തിനും പിന്നിൽ
+            ഒരു ചെറിയ കഥയുണ്ട്.
+        </p>
 
-@media (max-width: 600px) {
-    .friendship-card {
-        padding: 40px 18px;
+    </div>
+
+
+    <div class="categories">
+
+
+        <!-- FRIENDSHIP -->
+
+        <div
+        class="category"
+        onclick="openCategory('friendship')">
+
+            <img
+            src="friends.jpg"
+            alt="Malayalam Friendship Quotes">
+
+            <div class="category-content">
+
+                <div class="emoji">
+                    🤝
+                </div>
+
+                <h3>
+                    Friendship
+                </h3>
+
+                <p>
+                    സൗഹൃദം...
+                    ജീവിതത്തിലെ ഏറ്റവും
+                    മനോഹരമായ കൂട്ടായ്മ.
+                </p>
+
+            </div>
+
+        </div>
+
+
+        <!-- LOVE -->
+
+        <div
+        class="category"
+        onclick="openCategory('love')">
+
+            <img
+            src="love.jpg"
+            alt="Malayalam Love Quotes">
+
+            <div class="category-content">
+
+                <div class="emoji">
+                    ❤️
+                </div>
+
+                <h3>
+                    Love
+                </h3>
+
+                <p>
+                    പറയാതെ മനസ്സിലാക്കുന്ന
+                    ചില വികാരങ്ങൾ.
+                </p>
+
+            </div>
+
+        </div>
+
+
+        <!-- SAD -->
+
+        <div
+        class="category"
+        onclick="openCategory('sad')">
+
+            <img
+            src="sad.jpg"
+            alt="Malayalam Sad and One Sided Love Quotes">
+
+            <div class="category-content">
+
+                <div class="emoji">
+                    🌧️
+                </div>
+
+                <h3>
+                    Sad
+                </h3>
+
+                <p>
+                    One-sided love,
+                    നഷ്ടപ്പെട്ട സ്നേഹം,
+                    പറയാതെ പോയ വാക്കുകൾ.
+                </p>
+
+            </div>
+
+        </div>
+
+
+        <!-- LIFE -->
+
+        <div
+        class="category"
+        onclick="openCategory('life')">
+
+            <img
+            src="life.jpg"
+            alt="Malayalam Life Quotes">
+
+            <div class="category-content">
+
+                <div class="emoji">
+                    🌱
+                </div>
+
+                <h3>
+                    Life
+                </h3>
+
+                <p>
+                    ജീവിതത്തെ കുറിച്ചുള്ള
+                    ചെറിയ ഓർമ്മപ്പെടുത്തലുകൾ.
+                </p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ================= SEARCH ================= -->
+
+<section>
+
+    <div class="section-title">
+
+        <div class="small">
+            Discover
+        </div>
+
+        <h2>
+            Find a feeling.
+        </h2>
+
+    </div>
+
+    <div class="search-box">
+
+        <input
+        type="text"
+        id="search"
+        placeholder="Quote തിരയൂ... ❤️"
+        onkeyup="searchQuotes()">
+
+    </div>
+
+</section>
+
+
+<!-- ================= QUOTES ================= -->
+
+<section id="quotes">
+
+    <div class="section-title">
+
+        <div class="small">
+            Words
+        </div>
+
+        <h2>
+            Quotes that stay.
+        </h2>
+
+        <p>
+            ചില വാക്കുകൾ നമ്മളെ
+            തന്നെ ഓർമ്മിപ്പിക്കും.
+        </p>
+
+    </div>
+
+
+    <div
+    class="quotes"
+    id="quoteContainer">
+
+
+        <!-- FRIENDSHIP QUOTE -->
+
+        <div
+        class="quote-card"
+        data-search="friendship സൗഹൃദം സുഹൃത്ത്">
+
+            <div class="quote-icon">
+                🤝
+            </div>
+
+            <div class="quote-text">
+
+                "കാലം മാറിയാലും,
+                ദൂരം കൂടിയാലും,
+                ചില സൗഹൃദങ്ങൾ
+                ഹൃദയത്തിൽ നിന്ന്
+                ഒരിക്കലും അകലില്ല."
+
+            </div>
+
+            <div class="quote-bottom">
+
+                <span class="quote-type">
+                    Friendship
+                </span>
+
+                <div class="quote-actions">
+
+                    <button
+                    class="small-btn"
+                    onclick="copyQuote(this)">
+                        📋
+                    </button>
+
+                    <button
+                    class="small-btn"
+                    onclick="likeQuote(this)">
+                        ♡
+                    </button>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <!-- LOVE QUOTE -->
+
+        <div
+        class="quote-card"
+        data-search="love സ്നേഹം പ്രണയം">
+
+            <div class="quote-icon">
+                ❤️
+            </div>
+
+            <div class="quote-text">
+
+                "സ്നേഹം എന്നത്
+                സ്വന്തമാക്കുന്നതല്ല...
+                ഒരാളുടെ സന്തോഷത്തിൽ
+                നമ്മളും സന്തോഷിക്കുന്നതാണ്."
+
+            </div>
+
+            <div class="quote-bottom">
+
+                <span class="quote-type">
+                    Love
+                </span>
+
+                <div class="quote-actions">
+
+                    <button
+                    class="small-btn"
+                    onclick="copyQuote(this)">
+                        📋
+                    </button>
+
+                    <button
+                    class="small-btn"
+                    onclick="likeQuote(this)">
+                        ♡
+                    </button>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <!-- SAD QUOTE -->
+
+        <div
+        class="quote-card"
+        data-search="sad one sided love നഷ്ടം വേദന">
+
+            <div class="quote-icon">
+                🌧️
+            </div>
+
+            <div class="quote-text">
+
+                "ഒരുപാട് സ്നേഹിച്ചിട്ടും
+                സ്വന്തമാക്കാൻ കഴിയാത്ത
+                ചില മനുഷ്യർ...
+                ഓർമ്മകളിൽ മാത്രം
+                എന്നും നമ്മുടേതാകും."
+
+            </div>
+
+            <div class="quote-bottom">
+
+                <span class="quote-type">
+                    Sad • One-sided
+                </span>
+
+                <div class="quote-actions">
+
+                    <button
+                    class="small-btn"
+                    onclick="copyQuote(this)">
+                        📋
+                    </button>
+
+                    <button
+                    class="small-btn"
+                    onclick="likeQuote(this)">
+                        ♡
+                    </button>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <!-- LIFE QUOTE -->
+
+        <div
+        class="quote-card"
+        data-search="life ജീവിതം motivation">
+
+            <div class="quote-icon">
+                🌱
+            </div>
+
+            <div class="quote-text">
+
+                "ജീവിതം എല്ലായ്പ്പോഴും
+                നമ്മൾ ആഗ്രഹിക്കുന്ന
+                വഴിയിലൂടെ പോകില്ല...
+                പക്ഷേ ഓരോ വഴിയും
+                നമ്മളെ എന്തെങ്കിലും
+                പഠിപ്പിക്കും."
+
+            </div>
+
+            <div class="quote-bottom">
+
+                <span class="quote-type">
+                    Life
+                </span>
+
+                <div class="quote-actions">
+
+                    <button
+                    class="small-btn"
+                    onclick="copyQuote(this)">
+                        📋
+                    </button>
+
+                    <button
+                    class="small-btn"
+                    onclick="likeQuote(this)">
+                        ♡
+                    </button>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <!-- FRIENDSHIP QUOTE 2 -->
+
+        <div
+        class="quote-card"
+        data-search="friendship friends സൗഹൃദം">
+
+            <div class="quote-icon">
+                ✨
+            </div>
+
+            <div class="quote-text">
+
+                "ഒരുമിച്ച് ചിരിച്ച
+                നിമിഷങ്ങളേക്കാൾ,
+                നമ്മൾ കരഞ്ഞപ്പോൾ
+                കൂടെ നിന്നവരാണ്
+                യഥാർത്ഥ സുഹൃത്തുക്കൾ."
+
+            </div>
+
+            <div class="quote-bottom">
+
+                <span class="quote-type">
+                    Friendship
+                </span>
+
+                <div class="quote-actions">
+
+                    <button
+                    class="small-btn"
+                    onclick="copyQuote(this)">
+                        📋
+                    </button>
+
+                    <button
+                    class="small-btn"
+                    onclick="likeQuote(this)">
+                        ♡
+                    </button>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <!-- LIFE QUOTE 2 -->
+
+        <div
+        class="quote-card"
+        data-search="life future hope ജീവിതം പ്രതീക്ഷ">
+
+            <div class="quote-icon">
+                🌅
+            </div>
+
+            <div class="quote-text">
+
+                "ഇന്നത്തെ വേദന
+                നാളെയുടെ ശക്തിയാകാം.
+                അതുകൊണ്ട്...
+                കുറച്ച് കൂടി മുന്നോട്ട്
+                നടക്കൂ."
+
+            </div>
+
+            <div class="quote-bottom">
+
+                <span class="quote-type">
+                    Life
+                </span>
+
+                <div class="quote-actions">
+
+                    <button
+                    class="small-btn"
+                    onclick="copyQuote(this)">
+                        📋
+                    </button>
+
+                    <button
+                    class="small-btn"
+                    onclick="likeQuote(this)">
+                        ♡
+                    </button>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ================= FEATURE ================= -->
+
+<section>
+
+    <div class="feature">
+
+        <div class="feature-box">
+
+            <h3>
+                ❤️ Love is a feeling.
+            </h3>
+
+            <p>
+                ചില സ്നേഹങ്ങൾ പറയാതെ തന്നെ
+                മനസ്സിലാകും. ചിലത് നമ്മോടൊപ്പം
+                തുടരും. ചിലത് ഓർമ്മകളായി
+                മാറും. പക്ഷേ ഓരോ സ്നേഹവും
+                നമ്മളെ മാറ്റിയിട്ടുണ്ടാകും.
+            </p>
+
+        </div>
+
+
+        <div class="feature-box">
+
+            <h3>
+                🤝 Friendship is a memory.
+            </h3>
+
+            <p>
+                ഒരുമിച്ച് ചെലവഴിച്ച ചെറിയ
+                നിമിഷങ്ങൾ പോലും വർഷങ്ങൾ കഴിഞ്ഞും
+                ഓർമ്മയിൽ ചിരി കൊണ്ടുവരും.
+                അതാണ് നല്ല സൗഹൃദത്തിന്റെ
+                സൗന്ദര്യം.
+            </p>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ================= QUOTE OF DAY ================= -->
+
+<section>
+
+    <div class="quote-day">
+
+        <div class="heart">
+            💗
+        </div>
+
+        <h2>
+            "ചില ആളുകൾ നമ്മുടെ ജീവിതത്തിൽ
+            വരുന്നത് ഒരു കഥയാകാനാണ്...
+            ചിലർ ഒരു ഓർമ്മയാകാനും."
+        </h2>
+
+        <p>
+            — ZeoouneStories
+        </p>
+
+    </div>
+
+</section>
+
+
+<!-- ================= FRIENDSHIP MEMORY ================= -->
+
+<section
+class="friendship-memory"
+id="friends">
+
+    <div class="friendship-card">
+
+        <div class="friendship-icon">
+            🫂
+        </div>
+
+        <p class="friendship-quote">
+
+            “ദൂരം നമ്മളെ അകറ്റിയെങ്കിലും,<br>
+
+            ഓർമ്മകൾ ഇന്നും നമ്മളെ
+            ഒരുമിച്ച് നിർത്തുന്നു…<br>
+
+            <span>
+                Miss you, my best friends. ❤️
+            </span>
+
+        </p>
+
+
+        <div class="friends-names">
+
+            <span>
+                Ayyappadas
+            </span>
+
+            <span>
+                Abijithh
+            </span>
+
+            <span>
+                Ponnu
+            </span>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+</main>
+
+
+<!-- ================= FOOTER ================= -->
+
+<footer>
+
+    <div class="footer-logo">
+        Zeooune<span>Stories</span> ❤️
+    </div>
+
+    <p>
+        Love • Friendship • Sadness • Life
+    </p>
+
+    <div class="footer-links">
+
+        <a href="#home">
+            Home
+        </a>
+
+        <a href="#categories">
+            Categories
+        </a>
+
+        <a href="#quotes">
+            Quotes
+        </a>
+
+        <a href="#friends">
+            Friends
+        </a>
+
+    </div>
+
+    <div class="copyright">
+
+        © 2026 ZeoouneStories.
+        All rights reserved.
+
+    </div>
+
+</footer>
+
+
+<!-- TOAST -->
+
+<div
+class="toast"
+id="toast">
+    Copied ❤️
+</div>
+
+
+<script>
+
+
+/* ================= CATEGORY FILTER ================= */
+
+function openCategory(category){
+
+    const cards =
+    document.querySelectorAll(".quote-card");
+
+    cards.forEach(card => {
+
+        card.style.display = "block";
+
+    });
+
+    let searchText = "";
+
+    if(category === "friendship"){
+        searchText = "friendship";
     }
 
-    .friendship-quote {
-        font-size: 17px;
+    if(category === "love"){
+        searchText = "love";
     }
 
-    .friends-names span {
-        font-size: 15px;
-        padding: 9px 17px;
+    if(category === "sad"){
+        searchText = "sad";
     }
+
+    if(category === "life"){
+        searchText = "life";
+    }
+
+    cards.forEach(card => {
+
+        const text =
+        card.dataset.search.toLowerCase();
+
+        if(text.includes(searchText)){
+
+            card.style.display = "block";
+
+        }else{
+
+            card.style.display = "none";
+
+        }
+
+    });
+
+    document
+    .getElementById("quotes")
+    .scrollIntoView({
+        behavior:"smooth"
+    });
+
 }
-</style>
+
+
+/* ================= SEARCH ================= */
+
+function searchQuotes(){
+
+    const input =
+    document
+    .getElementById("search")
+    .value
+    .toLowerCase();
+
+    const cards =
+    document.querySelectorAll(".quote-card");
+
+    cards.forEach(card => {
+
+        const text =
+        card.dataset.search.toLowerCase();
+
+        if(text.includes(input)){
+
+            card.style.display = "block";
+
+        }else{
+
+            card.style.display = "none";
+
+        }
+
+    });
+
+}
+
+
+/* ================= COPY QUOTE ================= */
+
+function copyQuote(button){
+
+    const card =
+    button.closest(".quote-card");
+
+    const quote =
+    card.querySelector(".quote-text").innerText;
+
+    navigator.clipboard.writeText(quote);
+
+    showToast(
+        "Quote copied ❤️"
+    );
+
+}
+
+
+/* ================= LIKE ================= */
+
+function likeQuote(button){
+
+    if(button.innerText === "♡"){
+
+        button.innerText = "❤️";
+
+        showToast(
+            "Added to your favourites ❤️"
+        );
+
+    }else{
+
+        button.innerText = "♡";
+
+    }
+
+}
+
+
+/* ================= TOAST ================= */
+
+function showToast(message){
+
+    const toast =
+    document.getElementById("toast");
+
+    toast.innerText = message;
+
+    toast.classList.add("show");
+
+    setTimeout(() => {
+
+        toast.classList.remove("show");
+
+    },2000);
+
+}
+
+
+/* ================= SCROLL ANIMATION ================= */
+
+const observer =
+new IntersectionObserver(
+(entries) => {
+
+    entries.forEach(entry => {
+
+        if(entry.isIntersecting){
+
+            entry.target.style.opacity = "1";
+
+            entry.target.style.transform =
+            "translateY(0)";
+
+        }
+
+    });
+
+},
+{
+    threshold:.12
+});
+
+
+document
+.querySelectorAll(
+".category,.quote-card,.feature-box,.friendship-card"
+)
+.forEach(element => {
+
+    element.style.opacity = "0";
+
+    element.style.transform =
+    "translateY(30px)";
+
+    element.style.transition =
+    "all .7s ease";
+
+    observer.observe(element);
+
+});
+
+</script>
+
+</body>
+</html>
